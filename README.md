@@ -2,7 +2,7 @@
 
 All metrics are flushed to console in a flush interval.
 
-This project has been built for development and testing purposes. It ensures an interface `8125/udp` to write metrics and an interface `8126/udp` to read metrics.
+This project has been built for development and testing purposes. It ensures an interface `8125/udp` to write metrics and an interface `8126/tcp` to read metrics.
 
 ## Requirements
 

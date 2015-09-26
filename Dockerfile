@@ -12,5 +12,6 @@ RUN git clone https://github.com/etsy/statsd.git /opt/statsd &&\
 COPY ./config.js /opt/statsd/
 
 EXPOSE 8125/udp
+EXPOSE 8126
 
 CMD ["/usr/bin/node", "/opt/statsd/stats.js", "/opt/statsd/config.js"]
