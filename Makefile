@@ -11,4 +11,4 @@ stop:
 	-@docker rm $(CONTAINER) > /dev/null
 
 run:
-	docker run -p 8125:8125/udp -p 8126:8126 --name $(CONTAINER) $(ORGANIZATION)/$(CONTAINER)
+	-@docker run --rm -p 8125:8125/udp -p 8126:8126 --name $(CONTAINER) $(ORGANIZATION)/$(CONTAINER)
