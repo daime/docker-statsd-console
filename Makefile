@@ -1,5 +1,5 @@
-ORGANIZATION="daime"
-CONTAINER="docker-statsd-console"
+ORGANIZATION := daime
+CONTAINER := docker-statsd-console
 
 default: kill build run
 
