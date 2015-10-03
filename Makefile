@@ -1,7 +1,9 @@
 ORGANIZATION := daime
 CONTAINER := docker-statsd-console
 
-default: stop build run
+.PHONY: all build stop run
+
+all: stop build run
 
 build:
 	-@docker build -t $(ORGANIZATION)/$(CONTAINER) .
